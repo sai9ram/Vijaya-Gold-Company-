@@ -236,6 +236,10 @@
             animation: spin-slow 12s linear infinite;
         }
 
+        .splash-text-shadow {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 1);
+        }
+
         body.splash-active {
             overflow: hidden;
             height: 100vh;
@@ -285,24 +289,24 @@
         <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="Lakshmi Devi & Ganapathi"
             class="absolute inset-0 w-full h-full object-contain">
         
-        <div class="relative z-10 text-center px-6 max-w-2xl pb-16 md:pb-20">
+        <div class="relative z-10 text-center px-10 py-12 max-w-2xl pb-16 md:pb-20 bg-black/30 backdrop-blur-sm rounded-[2rem] border border-white/10 mx-6 mb-12">
             <div class="space-y-4">
-                <h1 class="text-4xl md:text-5xl font-serif text-primary opacity-0 animate-splash-text-in"
+                <h1 class="text-4xl md:text-5xl font-serif text-primary opacity-0 animate-splash-text-in splash-text-shadow"
                     style="animation-delay: 0.6s;">Welcome to</h1>
-                <h2 class="text-3xl md:text-4xl font-serif text-white opacity-0 animate-splash-text-in"
+                <h2 class="text-3xl md:text-4xl font-serif text-white opacity-0 animate-splash-text-in splash-text-shadow"
                     style="animation-delay: 0.8s;">Vijaya Gold Company</h2>
                 <div class="h-px w-24 bg-primary/30 mx-auto opacity-0 animate-splash-text-in"
                     style="animation-delay: 1s;"></div>
-                <p class="text-stone-300 text-sm md:text-base tracking-[0.3em] uppercase font-bold opacity-0 animate-splash-subtext-in"
+                <p class="text-white text-sm md:text-base tracking-[0.3em] uppercase font-bold opacity-0 animate-splash-subtext-in splash-text-shadow"
                     style="animation-delay: 1.2s;">Trust · Prosperity · Legacy</p>
             </div>
 
             <div class="mt-10 flex flex-col items-center gap-4 opacity-0 animate-splash-text-in"
                 style="animation-delay: 1.5s;">
-                <div class="w-48 h-0.5 bg-stone-800 rounded-full overflow-hidden">
+                <div class="w-48 h-0.5 bg-white/20 rounded-full overflow-hidden">
                     <div class="w-full h-full bg-primary origin-left animate-splash-progress"></div>
                 </div>
-                <span class="text-[10px] text-stone-500 uppercase tracking-widest font-bold">Entering our
+                <span class="text-[10px] text-white/70 uppercase tracking-widest font-bold splash-text-shadow">Entering our
                     sanctuary</span>
             </div>
         </div>
