@@ -284,17 +284,17 @@
 <body class="bg-surface text-on-surface">
     <!-- Splash Screen -->
     <div id="splash-screen"
-        class="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-stone-950 overflow-hidden">
-        <!-- Blurred Background Layer -->
+        class="fixed inset-0 z-[1000] flex flex-col items-center justify-center md:justify-end bg-stone-950 overflow-hidden">
+        <!-- Blurred Background Layer (Mobile Only) -->
         <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="" 
-            class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110">
+            class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110 md:hidden">
         
-        <!-- Main Fully Visible Image Layer -->
+        <!-- Main Image Layer: Contained on mobile, Cover on desktop -->
         <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="Lakshmi Devi & Ganapathi"
-            class="relative z-10 w-full h-full object-contain max-h-[70vh]">
+            class="absolute inset-0 w-full h-full object-contain md:object-cover z-10">
         
         <!-- Text Container Overlay -->
-        <div class="relative z-20 text-center px-6 py-6 max-w-lg bg-black/10 backdrop-blur-[1px] rounded-2xl mx-4 -mt-12">
+        <div class="relative z-20 text-center px-6 py-6 max-w-lg bg-black/10 backdrop-blur-[1px] rounded-2xl mx-4 -mt-12 md:mt-0 md:bg-transparent md:backdrop-blur-none md:max-w-2xl md:pb-16 md:md:pb-20 md:mx-auto">
             <div class="space-y-4">
                 <h1 class="text-4xl md:text-5xl font-serif text-primary opacity-0 animate-splash-text-in splash-text-shadow"
                     style="animation-delay: 0.6s;">Welcome to</h1>
