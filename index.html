@@ -284,17 +284,16 @@
 <body class="bg-surface text-on-surface">
     <!-- Splash Screen -->
     <div id="splash-screen"
-        class="fixed inset-0 z-[1000] flex flex-col items-center justify-center md:justify-end bg-stone-950 overflow-hidden">
-        <!-- Blurred Background Layer (Mobile Only) -->
-        <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="" 
-            class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110 md:hidden">
+        class="fixed inset-0 z-[1000] flex flex-col items-center justify-center bg-stone-950 overflow-hidden">
+        <!-- Background Blur to fill screen -->
+        <img src="Lakshmi_Devi_Ganapathi.jpeg" class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-110">
         
-        <!-- Main Image Layer: Contained on mobile, Cover on desktop -->
-        <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="Lakshmi Devi & Ganapathi"
-            class="absolute inset-0 w-full h-full object-contain md:object-cover z-10">
-        
-        <!-- Text Container Overlay -->
-        <div class="relative z-20 text-center px-6 py-6 max-w-lg bg-black/10 backdrop-blur-[1px] rounded-2xl mx-4 -mt-12 md:mt-0 md:bg-transparent md:backdrop-blur-none md:max-w-2xl md:pb-16 md:md:pb-20 md:mx-auto">
+        <!-- Full Sharp Image -->
+        <div class="relative z-10 w-full flex flex-col items-center px-4">
+            <img src="Lakshmi_Devi_Ganapathi.jpeg" alt="Lakshmi Devi & Ganapathi"
+                class="max-w-full max-h-[45vh] object-contain shadow-2xl rounded-lg mb-8">
+            
+            <div class="text-center px-6 py-8 w-full max-w-lg bg-black/40 backdrop-blur-md rounded-2xl border border-white/10">
             <div class="space-y-4">
                 <h1 class="text-4xl md:text-5xl font-serif text-primary opacity-0 animate-splash-text-in splash-text-shadow"
                     style="animation-delay: 0.6s;">Welcome to</h1>
